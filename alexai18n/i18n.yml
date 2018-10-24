@@ -1,0 +1,8 @@
+en-US:
+  demo:
+    hello: "Hello, world"
+    three: "Three!"
+
+es-ES:
+  demo:
+    hello: "Hola!"
