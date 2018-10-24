@@ -3,7 +3,6 @@ module github.com/agilesyndrome/go-alexa-i18n
 require (
 	github.com/arienmalec/alexa-go v0.0.0-20180809023015-3f017bd00f9b
 	github.com/asaskevich/govalidator v0.0.0-20180720115003-f9ffefc3facf // indirect
-	github.com/aws/aws-lambda-go v1.6.0 // indirect
 	github.com/gorilla/sessions v1.1.3 // indirect
 	github.com/gosimple/slug v1.3.0 // indirect
 	github.com/jinzhu/gorm v1.9.1 // indirect
