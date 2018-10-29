@@ -10,6 +10,12 @@ var (
   I18n *i18n.I18n
 )
 
+func WorldString(cultureID string, stringID string) string) {
+  request := alexa.Request{}
+  request.Body.Locale = cultureID
+  return WorldString(request, stringID)
+}
+
 func WorldString(req alexa.Request,  stringID string) (string) {
   cultureId := req.Body.Locale
   templ := I18n.T(cultureId, stringID)
