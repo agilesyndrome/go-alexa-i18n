@@ -10,10 +10,10 @@ var (
   I18n *i18n.I18n
 )
 
-func WorldString(cultureID string, stringID string) string) {
+func CultureRequest(cultureID string) (alexa.Request) {
   request := alexa.Request{}
   request.Body.Locale = cultureID
-  return WorldString(request, stringID)
+  return request
 }
 
 func WorldString(req alexa.Request,  stringID string) (string) {
