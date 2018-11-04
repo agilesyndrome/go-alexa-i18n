@@ -1,6 +1,6 @@
 # Go i18n Support for Alexa Responses
 
-First, create a `./i18.yml` file in the root of your SKILL folder (not your Intent subfolders)
+First, create a `./i18n.yml` file in the root of your SKILL folder (not your Intent subfolders)
 
 
 ```
@@ -26,3 +26,20 @@ func Handler(request alexa.Request) (alexa.Response, error) {
 }
 
 ```
+
+
+## Multiple Cultures
+
+In the i18n.yml file
+```
+en-US:
+  myintent:
+    title: "Card Title"
+    text: "Hello World!"
+es-ES:
+  myintent:
+    title: "Card Title"
+    text: "Hola"
+```
+
+If a request comes into your skill, and you do not yet have the culture in your i18n.yml file, it will return the FIRST culture listed.
